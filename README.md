@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🛡️ UBI FundWatch
-### AI-Powered Financial Intelligence & AML Surveillance Console
+### AI-Powered Financial Intelligence & AML Surveillance Console designed for Union Bank of India
 
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -21,9 +21,9 @@ UBI FundWatch is a premium-grade financial surveillance platform that combines r
 
 ---
 
-## ✨ Features
+## Features
 
-### 🖥️ Mission Control Dashboard
+### Mission Control Dashboard
 - **Real-time KPI Cards** — Live widgets displaying total transactions, flagged transactions, active investigations, and system health at a glance
 - **Security Operations Pulse** — Visual health monitor for all underlying AI detection algorithms with accuracy scores and false-positive rates
 - **Recent Alerts Feed** — Prioritized, color-coded alert stream with risk levels (Critical / High / Medium / Low)
@@ -32,7 +32,7 @@ UBI FundWatch is a premium-grade financial surveillance platform that combines r
 
 ---
 
-### 🔍 Fund Flow Visualizer
+### Fund Flow Visualizer
 - **Interactive Network Graph** — D3-powered visualization of multi-hop transaction chains, entity relationships, and layering patterns
 - **Time-Lapse Replay** — Step-by-step reconstruction of suspicious transaction sequences to analyze velocity and behavioral patterns
 - **Mule Node Tracker** — Detects and highlights money mule accounts and infers hidden controllers within complex fund-flow networks
@@ -40,7 +40,7 @@ UBI FundWatch is a premium-grade financial surveillance platform that combines r
 
 ---
 
-### 🚨 Alerts & Case Management
+### Alerts & Case Management
 - **Smart Alert Console** — Filterable, searchable alert queue with severity tiers, entity tags, and investigation linkage
 - **One-Click Case Escalation** — Promote any alert directly to an active investigation with full context preserved
 - **Bulk Alert Actions** — Mass-acknowledge, export, or archive multiple alerts simultaneously
@@ -48,7 +48,7 @@ UBI FundWatch is a premium-grade financial surveillance platform that combines r
 
 ---
 
-### 🧪 Investigation Center
+### Investigation Center
 - **Dedicated Investigation Workspace** — Structured environment for deep-diving flagged entities with full profile, transaction history, and network graph
 - **AI Briefing Hub** — LLM-generated plain-language summaries of each case with risk reasoning and recommended next steps
 - **Fraud DNA Fingerprinting** — Pattern-matching engine that identifies behavioral signatures unique to known AML typologies (e.g., Hawala structuring, smurfing, layering)
@@ -56,7 +56,7 @@ UBI FundWatch is a premium-grade financial surveillance platform that combines r
 
 ---
 
-### 🏛️ Forensics Center
+### Forensics Center
 - **Advanced Transaction Forensics** — Deep packet-level inspection of individual transactions with metadata overlays
 - **Behavioral Anomaly Detection** — ML-based deviation analysis comparing entity behavior against peer cohorts and historical baselines
 - **Pattern Library** — Searchable catalogue of known fraud typologies with visual examples and detection heuristics
@@ -64,7 +64,7 @@ UBI FundWatch is a premium-grade financial surveillance platform that combines r
 
 ---
 
-### 📊 Reports & Compliance
+### Reports & Compliance
 - **One-Click Forensic PDF Export** — Generates court-ready, professionally formatted forensic reports via jsPDF with full transaction tables, risk summaries, and network diagrams
 - **Scheduled Report Builder** — Configure automated compliance report delivery for regulatory submissions
 - **Audit Trail Export** — Full tamper-evident audit logs exportable in CSV and PDF formats
@@ -72,7 +72,7 @@ UBI FundWatch is a premium-grade financial surveillance platform that combines r
 
 ---
 
-### 🤖 AI Co-Pilot (Chat Assistant)
+### AI Co-Pilot (Chat Assistant)
 - **Contextual Intelligence Chat** — Conversational AI assistant embedded directly in the platform for instant query resolution
 - **Natural Language Queries** — Ask questions like *"Show me all transactions over $50K to high-risk jurisdictions in the last 30 days"* and get structured results
 - **Investigative Suggestions** — AI proactively recommends next investigation steps based on current case context
@@ -80,14 +80,14 @@ UBI FundWatch is a premium-grade financial surveillance platform that combines r
 
 ---
 
-### 🔐 Authentication & Security
+### Authentication & Security
 - **Secure Auth Flow** — Role-based access control with analyst, supervisor, and admin tiers
 - **Premium Login UI** — Immersive, animated cybersecurity-themed authentication experience
 - **Session Management** — Automatic session expiry and secure token handling
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Category | Technology |
 |---|---|
@@ -106,7 +106,7 @@ UBI FundWatch is a premium-grade financial surveillance platform that combines r
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - **Node.js** v18 or higher
