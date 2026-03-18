@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 215 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 12%;
+
+    --primary: 218 85% 30%;
+    --primary-foreground: 210 40% 98%;
+
+    --primary-light: 214 100% 95%;
+    --primary-light-foreground: 218 85% 30%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 215 25% 27%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 211 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 218 85% 30%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 218 85% 30%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 218 85% 30%;
+    --sidebar-accent: 218 85% 36%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 218 70% 40%;
+    --sidebar-ring: 211 100% 50%;
+    --sidebar-muted: 218 60% 50%;
+
+    --shadow-soft: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
+    --shadow-elevated: 0 10px 25px -5px rgba(11, 61, 145, 0.1), 0 8px 10px -6px rgba(11, 61, 145, 0.05);
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 96%;
+
+    --card: 222 47% 9%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 222 47% 9%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 211 100% 60%;
+    --primary-foreground: 222 47% 6%;
+
+    --primary-light: 218 85% 15%;
+    --primary-light-foreground: 211 100% 70%;
+
+    --secondary: 217 33% 15%;
+    --secondary-foreground: 210 40% 90%;
+
+    --muted: 217 33% 15%;
+    --muted-foreground: 215 20% 60%;
+
+    --accent: 211 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 211 100% 55%;
+
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 40% 90%;
+    --sidebar-primary: 211 100% 60%;
+    --sidebar-primary-foreground: 222 47% 6%;
+    --sidebar-accent: 217 33% 15%;
+    --sidebar-accent-foreground: 210 40% 90%;
+    --sidebar-border: 217 33% 18%;
+    --sidebar-ring: 211 100% 55%;
+    --sidebar-muted: 215 20% 50%;
+
+    --shadow-soft: 0 2px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15);
+    --shadow-elevated: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Hanken Grotesk', system-ui, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  button, input, select, textarea {
+    font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+    font-family: 'Hanken Grotesk', system-ui, sans-serif;
+    @apply tracking-tight font-semibold text-foreground;
+  }
+  .font-mono {
+    font-family: 'Geist Mono', 'SF Mono', 'Fira Code', monospace;
+  }
+  .font-display {
+    font-family: 'Hanken Grotesk', system-ui, sans-serif;
+    @apply tracking-tight font-bold;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-2xl border border-white/10 shadow-2xl;
+  }
+  
+  .neural-border {
+    @apply relative after:absolute after:inset-0 after:rounded-[inherit] after:border after:border-white/10 after:pointer-events-none;
+  }
+
+  /* Global Smooth Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-white/10 hover:bg-white/20 transition-colors rounded-full;
+  }
+  
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+  
+  .text-shadow-glow {
+    text-shadow: 0 0 15px rgba(var(--primary), 0.5);
+  }
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+  .glass {
+    @apply backdrop-blur-xl bg-white/10 border border-white/10;
+  }
+  .glass-dark {
+    @apply backdrop-blur-xl bg-black/40 border border-white/5;
+  }
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+  }
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+}
